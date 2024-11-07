@@ -1,0 +1,42 @@
+3.  /**
+    let items = [1, 1, 1, 5, 2, 3, 4, 3, 3, 3, 3, 3, 3, 7, 8, 5, 4, 9, 0, 1, 3, 2, 6, 7, 5,
+    4, 4, 7, 8, 8, 0, 1, 2, 3, 1];
+    Please write down a function to console log unique value from this array.
+    **/
+
+    A:
+    function getUniqueNumber(items) {
+    return Array.from(new Set(items));
+    }
+
+4.  /** What is different between <section> and <article>, can you make an example how you
+    will be using it? **/
+
+    A: I would use <article> for individual content, say blog posts, videos, or images etc.
+    <section> would be used to form groups according to functionality or theme (from content).
+    So normaly, <ariticle>s would be grouped in <section>, I would avoid further grouping <section> in
+    <article> for cleaner structer, though it depends.
+
+5.  /** Please explain about what is CSS boxing model and the layout components that it
+    consists of.
+    **/
+
+    A: Every visual element presented on the dom comes in the unit of a 'box'.
+    This box consists of 'content', 'padding', 'border' and 'margin'.
+    All layout and spacing are calculated according to these box units.
+
+6.  /** Can you explain CSS priority, and what principle are your used to writing CSS
+    stylesheet. **/
+
+    A: !important > inline styles > id > classes > elements > \*
+    I've used BEM, atomic (or component), or a simple distinction between typography and layout.
+    Have also used more utility classes from tailwindCss which often follows a mobile-first philosophy.
+
+7.  /** Can you introducing some of Semantic HTML elements that you already know and how you
+    used it ever, please make some example. **/
+
+    A: For general layout, i always use <header>, <section>, <article>, <nav>, <figure>/<figcaption> whenever i can.
+    For tabular data, i would always construct the table including <thead>, <tbody>, <tfoot>, and a clear use of <th> and <td>.
+
+    Other's I might be aware of but seldom used include <aside>, <dt>, <dd>, <pre>, etc as i find them not that descriptive.
+    I also avoid using <b>, <i> (unless suggested from UI framework) and almost always use <span>.
